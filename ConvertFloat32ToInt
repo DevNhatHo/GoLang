@@ -1,0 +1,13 @@
+package main
+import "fmt"
+
+func main() {
+    var taxAmount float32
+    fmt.Println("what is your input ? : ")
+    fmt.Scan(&taxAmount)
+    fmt.Println(taxAmount)
+    fmt.Println("Printing integer version ")
+    var taxInt int = int(taxAmount)
+    fmt.Println(taxInt)
+    
+}
