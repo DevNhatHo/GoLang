@@ -1,0 +1,34 @@
+package main
+import(
+    "fmt"
+    "math"
+) 
+
+func main() {
+   var V float64
+    var P float64
+    var r float64  
+    var n int
+    var t int
+    var base float64
+    var exp float64
+    fmt.Println("what is input P ? initial deposit : ")
+    fmt.Scan(&P)
+    fmt.Println("what is input r ? interest rate : ")
+    fmt.Scan(&r)
+    fmt.Println("what is input n ? the number of times per year interest is calculated : ")
+    fmt.Scan(&n)
+    fmt.Println("what is input t ? the number of years since the initial deposit: ")
+    fmt.Scan(&t)
+    fmt.Println("what is input V ? value : ")
+    var nfloat = float64(n)
+    var tfloat= float64(t)
+    base = P * ((1 + (r/nfloat))) 
+    exp =(nfloat*tfloat)
+    V = math.Pow(base, exp)
+    
+    println(float32(V))
+    
+    
+    
+}
